@@ -1,0 +1,85 @@
+.checkbtn{
+    color: #ffff;
+    font-size: 30px;
+    display: none;
+    margin-right: 20px;
+
+}
+#check{
+    display: none;
+}
+@media(max-width:576px){
+    .navBar{
+        width: 100%;
+    }
+    .navBar h1{
+        margin-left: 10px;
+    }
+    .navBar .navLinks .links {
+        width: 316%;
+        flex-direction: column;
+        position: relative;
+        top: 185px;
+        background-color: #ffff;
+        left: -330px;
+        display: none;
+    }
+    .navBar .navLinks .links li{
+        margin-left: 2rem;
+    }
+    .navBar .navLinks .links a {
+        color: black;
+    }
+    .navBar .navLinks .links a:hover{
+        color: #47b2e4;
+    }
+    .navBar .navLinks .links button{
+        width: 30%;
+        margin-top: 10px;
+        color: black;
+    }
+    .checkbtn{
+        display: block;
+    }
+    #check:checked ~ .navLinks .links{
+        display: flex;
+    }
+    .heroContainer{
+        height: 100%;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .heroContainer .image img{
+        padding: 20px 10px;
+    }
+    .heroContainer .left{
+        width: 100%;
+    }
+    .heroContainer .leftside h1{
+        width: 100%;
+        font-size: 28px;
+    }
+    .heroContainer .leftside h2{
+        font-size: 16px;
+        padding: 0 30px;
+    }
+    .heroContainer .leftside{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        text-align: center;
+        padding: 0 30px;
+    }
+    .heroContainer .start button{
+        margin-left: 10rem;
+        margin-bottom: 20px;
+    }
+    .clientContainer{
+        width: 100%;
+    }
+    .client img{
+        width: 13.5%;
+    }
+
+    
+}
